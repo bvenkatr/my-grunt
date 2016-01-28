@@ -1,7 +1,13 @@
 module.exports = function(grunt){
-	grunt.initConfig(grunt.file.readJSON("config.json"));
 
-	grunt.registerTask("default", function(){
-		grunt.log.writeln("Hello " + grunt.config.get("person").firstName);
+	grunt.initConfig({
+		watch: {
+			files:["README.md"],
+			tasks: ["watchit"]
+		}
+	});
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.registerTask("watchit", function(){
+		grunt.log.writeln("Yes,  you're watching for file changes");
 	});
 };

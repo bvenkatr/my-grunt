@@ -1,0 +1,25 @@
+{
+  "name": "my-grunt",
+  "version": "1.0.0",
+  "description": "module.exports = function(grunt){ \tgrunt.registerTask(\"default\", function(name){ \t\tgrunt.log.writeln(\"Hello \"+name); \t}); }; grunt default:venkat /////////",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvenkatr/my-grunt.git"
+  },
+  "author": "Venkat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvenkatr/my-grunt/issues"
+  },
+  "homepage": "https://github.com/bvenkatr/my-grunt#readme"
+}
